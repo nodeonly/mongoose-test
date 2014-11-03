@@ -16,7 +16,8 @@ mongoose-test
 
 ## 添加更多有用依赖
 
-	npm install --save mongoose 
+	npm install --save mongoose
+	npm install --save bcrypt
 
 ## 安装服务器自动重载模块
 
