@@ -8,7 +8,13 @@ this is a test example project for mongoose!
 
 ## 使用淘宝的npm源
 
-	nrm use taobao
+测速
+
+	nrm test
+
+选择速度快的源
+
+	nrm use cnpm
 
 ## 安装依赖包
 
