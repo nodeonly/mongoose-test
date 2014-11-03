@@ -71,9 +71,10 @@ this is a test example project for mongoose!
 ## 测试相关网址
 
 - https://github.com/visionmedia/mocha
+- http://visionmedia.github.io/mocha/
+- http://mochajs.org/
 - https://github.com/chaijs/chai
 - http://chaijs.com/
-- http://visionmedia.github.io/mocha/
 - http://sinonjs.org/
 - http://zombie.labnotes.org/
 - https://github.com/tj/supertest（api test文档）
