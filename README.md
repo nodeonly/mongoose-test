@@ -80,6 +80,12 @@ this is a test example project for mongoose!
 - https://github.com/tj/supertest（api test文档）
 - https://github.com/tj/superagent/blob/master/test/node/agency.js（api test示例）
 
+## 更多
+
+下面概念，请自行了解
+
+- TDD
+- BDD
 
 ## Contributing
 
