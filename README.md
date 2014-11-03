@@ -54,6 +54,67 @@ this is a test example project for mongoose!
 
 ## 创建`test/user_model.js`
 
+### 测试代码基本结构
+
+```
+describe('UserModel', function(){
+	before(function() {
+    // runs before all tests in this block
+  })
+  after(function(){
+    // runs after all tests in this block
+  })
+  beforeEach(function(){
+    // runs before each test in this block
+  })
+  afterEach(function(){
+    // runs after each test in this block
+  })
+	
+  describe('#save()', function(){
+    it('should return sang_test2 when user save', function(done){
+			。。。
+    })
+  })
+})
+```
+
+生命周期说明
+
+- before
+- after
+- beforeEach
+- afterEach
+
+### 断言
+
+断言都是单元测试的核心
+
+断言作为Assert类的静态方法。如果一个断言失败，方法的调用不会返回值，并且会报告一个错误。
+
+如果一个测试包含多个断言，那些紧跟失败断言的断言都不会执行，因为此原因，通常每个测试方法最好只有一个断言。每个方法可以无消息调用，也可以是带有一个简单文本消息调用，或者带有一个消息以及参数调用。在最后一种情况下，使用了一个提供的文本以及参数来格式化消息。
+
+目前流行的断言基本分为3类
+
+- assert风格
+- should风格
+- expect风格
+
+没有好坏之分，只是看个人习惯
+
+这里使用chai这个库，它支持3种风格的断言，非常方便
+
+Chai has several interfaces that allow the developer to choose the most comfortable. The chain-capable BDD styles provide an expressive language & readable style, while the TDD assert style provides a more classical feel.
+
+
+```
+var assert = require('chai').assert;
+var expect = require('chai').expect;
+require('chai').should();
+```
+
+具体用法请查看`http://chaijs.com/`文档
+
 ## 测试命令
 
 启动mongodb服务
