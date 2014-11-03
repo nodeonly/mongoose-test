@@ -33,6 +33,14 @@ this is a test example project for mongoose!
 	npm install --save-dev supertest
 	npm install --save-dev zombie
 
+单元测试需要的各个模块说明
+
+- mocha（Mocha is a feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun.）
+- chai（Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.）
+- sinon（Standalone test spies, stubs and mocks for JavaScript.）
+- zombie (页面事件模拟Zombie.js is a lightweight framework for testing client-side JavaScript code in a simulated environment. No browser required.)
+- supertest(接口测试 Super-agent driven library for testing node.js HTTP servers using a fluent API)
+
 ## 修改package.json
 
 ```
@@ -59,6 +67,18 @@ this is a test example project for mongoose!
 测试
 
 	npm test
+	
+## 测试相关网址
+
+- https://github.com/visionmedia/mocha
+- https://github.com/chaijs/chai
+- http://chaijs.com/
+- http://visionmedia.github.io/mocha/
+- http://sinonjs.org/
+- http://zombie.labnotes.org/
+- https://github.com/tj/supertest（api test文档）
+- https://github.com/tj/superagent/blob/master/test/node/agency.js（api test示例）
+
 
 ## Contributing
 
