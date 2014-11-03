@@ -50,9 +50,25 @@ this is a test example project for mongoose!
 	},
 ```
 
-## 创建`db/user_model.js``
+## 创建`db/user_model.js`
+
+此文件里编写用户相关的mongodb操作
+
+- Schema define
+- virtual attr
+- save pre callback
+- UserSchema.methods
+- UserSchema.statics
+- findOne
+- user hash password with salt
+- getAuthenticated
 
 ## 创建`test/user_model.js`
+
+测试2个方法
+
+- #save()
+- #getAuthenticated()
 
 ### 测试代码基本结构
 
