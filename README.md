@@ -1,7 +1,7 @@
 mongoose-test
 =============
 
-
+this is a test example project for mongoose!
 ## 创建项目
 
 	express .
