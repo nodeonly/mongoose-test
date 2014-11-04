@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var istanbul = require('gulp-istanbul');
-var mocha = require('gulp-mocha'); // Using mocha here, but any test framework will work
+var mocha = require('gulp-mocha'); 
 
 gulp.task('test', function (cb) {
   gulp.src(['db/**/*.js'])
@@ -14,5 +14,9 @@ gulp.task('test', function (cb) {
 });
 
 gulp.task('default',['test'], function() {
+  gulp.watch(['./db/**/*','./test/**/*'], ['test']);
+});
+
+gulp.task('watch',['test'], function() {
   gulp.watch(['./db/**/*','./test/**/*'], ['test']);
 });
