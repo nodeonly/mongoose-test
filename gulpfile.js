@@ -12,3 +12,7 @@ gulp.task('test', function (cb) {
         .on('end', cb);
     });
 });
+
+gulp.task('default',['test'], function() {
+  gulp.watch(['./db/**/*','./test/**/*'], ['test']);
+});

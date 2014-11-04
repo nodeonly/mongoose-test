@@ -63,6 +63,9 @@ npm install --save-dev gulp
 npm install --save-dev gulp-mocha
 npm install --save-dev gulp-istanbul
 
+
+node_modules/.bin/gulp test 
+
 ### 修改package.json
 
 ```

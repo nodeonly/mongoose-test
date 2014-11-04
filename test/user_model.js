@@ -22,7 +22,6 @@ mongoose.connect(connectionString, options, function(err, res) {
   }
 });
 
-
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'mongoose connection error:'));
 db.once('open', function callback () {
@@ -79,6 +78,7 @@ describe('UserModel', function(){
   			});
     })
   })
+
 
   describe('#getAuthenticated()', function(){
     it('should return 60 when auto save Password123 encrypted string length', function(done){
