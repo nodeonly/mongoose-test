@@ -59,6 +59,10 @@ this is a test example project for mongoose!
 - auto test
 - 代码测试覆盖率
 
+npm install --save-dev gulp
+npm install --save-dev gulp-mocha
+npm install --save-dev gulp-istanbul
+
 ### 修改package.json
 
 ```
