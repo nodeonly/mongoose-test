@@ -6,7 +6,7 @@ this is a test example project for mongoose!
 
 	express .
 
-## 使用淘宝的npm源
+## 使用更快的npm源
 
 测速
 
