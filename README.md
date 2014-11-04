@@ -2,11 +2,16 @@ mongoose-test
 =============
 
 this is a test example project for mongoose!
-## 创建项目
+
+## 准备工作
+
+这部分主要是完成了构建项目骨架代码得任务，通过命令和少许文件更改，即可完成。
+
+### 创建项目
 
 	express .
 
-## 使用更快的npm源
+### 使用更快的npm源
 
 测速
 
@@ -16,23 +21,25 @@ this is a test example project for mongoose!
 
 	nrm use cnpm
 
-## 安装依赖包
+### 安装依赖包
 
 	npm install
 
-## 添加更多有用依赖
+### 添加更多有用依赖
 
 	npm install --save mongoose
 	npm install --save bcrypt
 
-## 安装服务器自动重载模块
+### 安装服务器自动重载模块
 
 	npm install --save-dev supervisor
 
-## 安装测试模块
+### 安装测试模块
 
 	mkdir test
-
+	npm install --save-dev gulp
+	touch Gulpfile.js
+	
 	npm install --save-dev mocha
 	npm install --save-dev chai
 	npm install --save-dev sinon
@@ -47,7 +54,12 @@ this is a test example project for mongoose!
 - zombie (页面事件模拟Zombie.js is a lightweight framework for testing client-side JavaScript code in a simulated environment. No browser required.)
 - supertest(接口测试 Super-agent driven library for testing node.js HTTP servers using a fluent API)
 
-## 修改package.json
+### 修改Gulpfile.js
+
+- auto test
+- 代码测试覆盖率
+
+### 修改package.json
 
 ```
   "scripts": {
@@ -55,6 +67,13 @@ this is a test example project for mongoose!
   	"test": "./node_modules/.bin/mocha -u tdd"
 	},
 ```
+
+### todo
+
+@小龙，写成一个一键脚本
+
+## test
+TDD 流程是，先编写一个失败测试，然后编写应用代码让测试通过，最后再按需重构代码。因为很多测试工具都使用红色表示失败测试，使用绿色表示通过的测试，所以这个流程有时也叫“遇红-变绿-重构”循环。这一节我们先完成这个循环的第一步，编写一个失败测试，“遇红”。然后在变绿，重构。
 
 ## 创建`db/user_model.js`
 
@@ -107,6 +126,8 @@ describe('UserModel', function(){
 - after
 - beforeEach
 - afterEach
+
+上面这段代码是向测试`UserModel`的`#save()`方法是否符合需求。
 
 ### 断言
 
@@ -169,6 +190,10 @@ require('chai').should();
 
 - TDD
 - BDD
+
+
+自动测试
+代码测试覆盖率
 
 ## Contributing
 
