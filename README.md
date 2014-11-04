@@ -233,6 +233,8 @@ require('chai').should();
 - http://zombie.labnotes.org/
 - https://github.com/tj/supertest（api test文档）
 - https://github.com/tj/superagent/blob/master/test/node/agency.js（api test示例）
+- https://github.com/i5ting/js-tools-best-practice/blob/master/doc/Gulp.md
+- https://github.com/SBoudrias/gulp-istanbul
 
 ## 更多
 
