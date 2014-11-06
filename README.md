@@ -222,6 +222,61 @@ require('chai').should();
 
 	npm test
 	
+## 自动测试和代码测试覆盖率
+
+- auto test
+- 代码测试覆盖率
+
+```
+npm install --save-dev gulp
+npm install --save-dev gulp-mocha
+npm install --save-dev gulp-istanbul
+```
+
+创建gulpfilejs
+
+```
+var gulp = require('gulp');
+var istanbul = require('gulp-istanbul');
+var mocha = require('gulp-mocha'); 
+
+gulp.task('test', function (cb) {
+  gulp.src(['db/**/*.js'])
+    .pipe(istanbul()) // Covering files
+    .on('finish', function () {
+      gulp.src(['test/*.js'])
+        .pipe(mocha())
+        .pipe(istanbul.writeReports()) // Creating the reports after tests runned
+        .on('end', cb);
+    });
+});
+
+gulp.task('default',['test'], function() {
+  gulp.watch(['./db/**/*','./test/**/*'], ['test']);
+});
+
+gulp.task('watch',['test'], function() {
+  gulp.watch(['./db/**/*','./test/**/*'], ['test']);
+});
+```
+
+
+测试
+
+```
+node_modules/.bin/gulp 
+```
+
+这时，你试试修改测试或源文件试试，看看会不会自动触发测试
+
+当然，如果你喜欢只是测试一次，可以这样做
+
+```
+node_modules/.bin/gulp test 
+```
+
+如果你不熟悉gulp，可以再这里https://github.com/i5ting/js-tools-best-practice/blob/master/doc/Gulp.md学习
+
 ## 测试相关网址
 
 - https://github.com/visionmedia/mocha
@@ -244,8 +299,6 @@ require('chai').should();
 - BDD
 
 
-自动测试
-代码测试覆盖率
 
 ## Contributing
 
