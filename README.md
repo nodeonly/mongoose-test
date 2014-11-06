@@ -37,7 +37,6 @@ this is a test example project for mongoose!
 ### 安装测试模块
 
 	mkdir test
-	npm install --save-dev gulp
 	touch Gulpfile.js
 	
 	npm install --save-dev mocha
