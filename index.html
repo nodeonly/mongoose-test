@@ -1,0 +1,480 @@
+
+	    <html>
+	      <head>
+				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	        <title>README</title>
+					
+					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+			
+				  <style>
+					pre {
+					    counter-reset: line-numbering;
+					    border: solid 1px #d9d9d9;
+					    border-radius: 0;
+					    background: #fff;
+					    padding: 0;
+					    line-height: 23px;
+					    margin-bottom: 30px;
+					    white-space: pre;
+					    overflow-x: auto;
+					    word-break: inherit;
+					    word-wrap: inherit;
+					}
+
+					pre a::before {
+					  content: counter(line-numbering);
+					  counter-increment: line-numbering;
+					  padding-right: 1em; /* space after numbers */
+					  width: 25px;
+					  text-align: right;
+					  opacity: 0.7;
+					  display: inline-block;
+					  color: #aaa;
+					  background: #eee;
+					  margin-right: 16px;
+					  padding: 2px 10px;
+					  font-size: 13px;
+					  -webkit-touch-callout: none;
+					  -webkit-user-select: none;
+					  -khtml-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+
+					pre a:first-of-type::before {
+					  padding-top: 10px;
+					}
+
+					pre a:last-of-type::before {
+					  padding-bottom: 10px;
+					}
+
+					pre a:only-of-type::before {
+					  padding: 10px;
+					}
+			
+					.highlight { background-color: #ffffcc } /* RIGHT */
+					</style>
+	      </head>
+	      <body>
+				  <div>
+							<div style='width:25%;'>
+									<ul id="tree" class="ztree" style='width:100%'>
+		
+									</ul>
+							</div>
+			        <div id='readme' style='width:70%;margin-left:20%;'>
+			          	<article class='markdown-body'>
+			            	<style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f0f0f0; }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #40a070 } /* Literal.Number.Bin */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+<h1>mongoose-test</h1>
+
+<p>this is a test example project for mongoose!</p>
+
+<h2>准备工作</h2>
+
+<p>这部分主要是完成了构建项目骨架代码得任务，通过命令和少许文件更改，即可完成。</p>
+
+<h3>创建项目</h3>
+<div class="highlight"><pre><span class="vg">express</span><span class="w"> </span><span class="o">.</span>
+</pre></div>
+<h3>使用更快的npm源</h3>
+
+<p>测速</p>
+<div class="highlight"><pre><span class="vg">nrm</span><span class="w"> </span><span class="vg">test</span>
+</pre></div>
+<p>选择速度快的源</p>
+<div class="highlight"><pre><span class="vg">nrm</span><span class="w"> </span><span class="vg">use</span><span class="w"> </span><span class="vg">cnpm</span>
+</pre></div>
+<h3>安装依赖包</h3>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span>
+</pre></div>
+<h3>添加更多有用依赖</h3>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="w"> </span><span class="vg">mongoose</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="w"> </span><span class="vg">bcrypt</span>
+</pre></div>
+<h3>安装服务器自动重载模块</h3>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">supervisor</span>
+</pre></div>
+<h3>安装测试模块</h3>
+<div class="highlight"><pre><span class="vg">mkdir</span><span class="w"> </span><span class="vg">test</span>
+<span class="vg">touch</span><span class="w"> </span><span class="vg">Gulpfile</span><span class="o">.</span><span class="vg">js</span>
+
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">mocha</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">chai</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">sinon</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">supertest</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">zombie</span>
+</pre></div>
+<p>单元测试需要的各个模块说明</p>
+
+<ul>
+<li>mocha（Mocha is a feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun.）</li>
+<li>chai（Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.）</li>
+<li>sinon（Standalone test spies, stubs and mocks for JavaScript.）</li>
+<li>zombie (页面事件模拟Zombie.js is a lightweight framework for testing client-side JavaScript code in a simulated environment. No browser required.)</li>
+<li>supertest(接口测试 Super-agent driven library for testing node.js HTTP servers using a fluent API)</li>
+</ul>
+
+<h3>修改Gulpfile.js</h3>
+
+<ul>
+<li>auto test</li>
+<li>代码测试覆盖率</li>
+</ul>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">gulp</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">gulp</span><span class="o">-</span><span class="vg">mocha</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">gulp</span><span class="o">-</span><span class="vg">istanbul</span>
+</pre></div>
+<p>创建gulpfilejs</p>
+<div class="highlight"><pre><span class="vg">var</span><span class="w"> </span><span class="vg">gulp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;gulp&#39;);</span>
+<span class="vg">var</span><span class="w"> </span><span class="vg">istanbul</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;gulp-istanbul&#39;);</span>
+<span class="vg">var</span><span class="w"> </span><span class="vg">mocha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;gulp-mocha&#39;); </span>
+
+<span class="vg">gulp</span><span class="o">.</span><span class="vg">task</span><span class="p">(</span><span class="c1">&#39;test&#39;, function (cb) {</span>
+<span class="w">  </span><span class="vg">gulp</span><span class="o">.</span><span class="vg">src</span><span class="p">([</span><span class="c1">&#39;db/**/*.js&#39;])</span>
+<span class="w">    </span><span class="o">.</span><span class="vg">pipe</span><span class="p">(</span><span class="vg">istanbul</span><span class="p">())</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="vg">Covering</span><span class="w"> </span><span class="vg">files</span>
+<span class="w">    </span><span class="o">.</span><span class="vg">on</span><span class="p">(</span><span class="c1">&#39;finish&#39;, function () {</span>
+<span class="w">      </span><span class="vg">gulp</span><span class="o">.</span><span class="vg">src</span><span class="p">([</span><span class="c1">&#39;test/*.js&#39;])</span>
+<span class="w">        </span><span class="o">.</span><span class="vg">pipe</span><span class="p">(</span><span class="vg">mocha</span><span class="p">())</span>
+<span class="w">        </span><span class="o">.</span><span class="vg">pipe</span><span class="p">(</span><span class="vg">istanbul</span><span class="o">.</span><span class="vg">writeReports</span><span class="p">())</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="vg">Creating</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">reports</span><span class="w"> </span><span class="vg">after</span><span class="w"> </span><span class="vg">tests</span><span class="w"> </span><span class="vg">runned</span>
+<span class="w">        </span><span class="o">.</span><span class="vg">on</span><span class="p">(</span><span class="c1">&#39;end&#39;, cb);</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="vg">gulp</span><span class="o">.</span><span class="vg">task</span><span class="p">(</span><span class="c1">&#39;default&#39;,[&#39;test&#39;], function() {</span>
+<span class="w">  </span><span class="vg">gulp</span><span class="o">.</span><span class="vg">watch</span><span class="p">([</span><span class="c1">&#39;./db/**/*&#39;,&#39;./test/**/*&#39;], [&#39;test&#39;]);</span>
+<span class="p">});</span>
+
+<span class="vg">gulp</span><span class="o">.</span><span class="vg">task</span><span class="p">(</span><span class="c1">&#39;watch&#39;,[&#39;test&#39;], function() {</span>
+<span class="w">  </span><span class="vg">gulp</span><span class="o">.</span><span class="vg">watch</span><span class="p">([</span><span class="c1">&#39;./db/**/*&#39;,&#39;./test/**/*&#39;], [&#39;test&#39;]);</span>
+<span class="p">});</span>
+</pre></div>
+<p>测试</p>
+<div class="highlight"><pre><span class="vg">node_modules</span><span class="o">/.</span><span class="vg">bin</span><span class="o">/</span><span class="vg">gulp</span><span class="w"> </span>
+</pre></div>
+<p>这时，你试试修改测试或源文件试试，看看会不会自动触发测试</p>
+
+<p>当然，如果你喜欢只是测试一次，可以这样做</p>
+<div class="highlight"><pre><span class="vg">node_modules</span><span class="o">/.</span><span class="vg">bin</span><span class="o">/</span><span class="vg">gulp</span><span class="w"> </span><span class="vg">test</span><span class="w"> </span>
+</pre></div>
+<p>如果你不熟悉gulp，可以再这里https://github.com/i5ting/js-tools-best-practice/blob/master/doc/Gulp.md学习</p>
+
+<h3>修改package.json</h3>
+<div class="highlight"><pre><span class="w">  </span><span class="s2">&quot;scripts&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;start&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;./node_modules/.bin/supervisor ./bin/www&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;test&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;./node_modules/.bin/mocha -u tdd&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+</pre></div>
+<h3>todo</h3>
+
+<p>@小龙，写成一个一键脚本</p>
+
+<h2>test</h2>
+
+<p>TDD 流程是，先编写一个失败测试，然后编写应用代码让测试通过，最后再按需重构代码。因为很多测试工具都使用红色表示失败测试，使用绿色表示通过的测试，所以这个流程有时也叫“遇红-变绿-重构”循环。这一节我们先完成这个循环的第一步，编写一个失败测试，“遇红”。然后在变绿，重构。</p>
+
+<h2>创建<code>db/user_model.js</code></h2>
+
+<p>此文件里编写用户相关的mongodb操作</p>
+
+<ul>
+<li>Schema define</li>
+<li>virtual attr</li>
+<li>save pre callback</li>
+<li>UserSchema.methods</li>
+<li>UserSchema.statics</li>
+<li>findOne</li>
+<li>user hash password with salt</li>
+<li>getAuthenticated</li>
+</ul>
+
+<h2>创建<code>test/user_model.js</code></h2>
+
+<p>测试2个方法</p>
+
+<ul>
+<li>#save()</li>
+<li>#getAuthenticated()</li>
+</ul>
+
+<h3>测试代码基本结构</h3>
+<div class="highlight"><pre><span class="vg">describe</span><span class="p">(</span><span class="c1">&#39;UserModel&#39;, function(){</span>
+<span class="w">    </span><span class="vg">before</span><span class="p">(</span><span class="vg">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="vg">runs</span><span class="w"> </span><span class="vg">before</span><span class="w"> </span><span class="vg">all</span><span class="w"> </span><span class="vg">tests</span><span class="w"> </span><span class="vg">in</span><span class="w"> </span><span class="vg">this</span><span class="w"> </span><span class="vg">block</span>
+<span class="w">  </span><span class="p">})</span>
+<span class="w">  </span><span class="vg">after</span><span class="p">(</span><span class="vg">function</span><span class="p">(){</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="vg">runs</span><span class="w"> </span><span class="vg">after</span><span class="w"> </span><span class="vg">all</span><span class="w"> </span><span class="vg">tests</span><span class="w"> </span><span class="vg">in</span><span class="w"> </span><span class="vg">this</span><span class="w"> </span><span class="vg">block</span>
+<span class="w">  </span><span class="p">})</span>
+<span class="w">  </span><span class="vg">beforeEach</span><span class="p">(</span><span class="vg">function</span><span class="p">(){</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="vg">runs</span><span class="w"> </span><span class="vg">before</span><span class="w"> </span><span class="vg">each</span><span class="w"> </span><span class="vg">test</span><span class="w"> </span><span class="vg">in</span><span class="w"> </span><span class="vg">this</span><span class="w"> </span><span class="vg">block</span>
+<span class="w">  </span><span class="p">})</span>
+<span class="w">  </span><span class="vg">afterEach</span><span class="p">(</span><span class="vg">function</span><span class="p">(){</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="vg">runs</span><span class="w"> </span><span class="vg">after</span><span class="w"> </span><span class="vg">each</span><span class="w"> </span><span class="vg">test</span><span class="w"> </span><span class="vg">in</span><span class="w"> </span><span class="vg">this</span><span class="w"> </span><span class="vg">block</span>
+<span class="w">  </span><span class="p">})</span>
+
+<span class="w">  </span><span class="vg">describe</span><span class="p">(</span><span class="c1">&#39;#save()&#39;, function(){</span>
+<span class="w">    </span><span class="vg">it</span><span class="p">(</span><span class="c1">&#39;should return sang_test2 when user save&#39;, function(done){</span>
+<span class="w">            </span><span class="err">。。。</span>
+<span class="w">    </span><span class="p">})</span>
+<span class="w">  </span><span class="p">})</span>
+<span class="p">})</span>
+</pre></div>
+<p>生命周期说明</p>
+
+<ul>
+<li>before</li>
+<li>after</li>
+<li>beforeEach</li>
+<li>afterEach</li>
+</ul>
+
+<p>上面这段代码是向测试<code>UserModel</code>的<code>#save()</code>方法是否符合需求。</p>
+
+<h3>断言</h3>
+
+<p>断言都是单元测试的核心</p>
+
+<p>断言作为Assert类的静态方法。如果一个断言失败，方法的调用不会返回值，并且会报告一个错误。</p>
+
+<p>如果一个测试包含多个断言，那些紧跟失败断言的断言都不会执行，因为此原因，通常每个测试方法最好只有一个断言。每个方法可以无消息调用，也可以是带有一个简单文本消息调用，或者带有一个消息以及参数调用。在最后一种情况下，使用了一个提供的文本以及参数来格式化消息。</p>
+
+<p>目前流行的断言基本分为3类</p>
+
+<ul>
+<li>assert风格</li>
+<li>should风格</li>
+<li>expect风格</li>
+</ul>
+
+<p>没有好坏之分，只是看个人习惯</p>
+
+<p>这里使用chai这个库，它支持3种风格的断言，非常方便</p>
+
+<p>Chai has several interfaces that allow the developer to choose the most comfortable. The chain-capable BDD styles provide an expressive language &amp; readable style, while the TDD assert style provides a more classical feel.</p>
+<div class="highlight"><pre><span class="vg">var</span><span class="w"> </span><span class="vg">assert</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;chai&#39;).assert;</span>
+<span class="vg">var</span><span class="w"> </span><span class="vg">expect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;chai&#39;).expect;</span>
+<span class="vg">require</span><span class="p">(</span><span class="c1">&#39;chai&#39;).should();</span>
+</pre></div>
+<p>具体用法请查看<code>http://chaijs.com/</code>文档</p>
+
+<h2>测试命令</h2>
+
+<p>启动mongodb服务</p>
+<div class="highlight"><pre><span class="vg">mongod</span>
+</pre></div>
+<p>服务器启动</p>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">start</span>
+</pre></div>
+<p>测试</p>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">test</span>
+</pre></div>
+<h2>自动测试和代码测试覆盖率法1：基于gulp</h2>
+
+<ul>
+<li>auto test</li>
+<li>代码测试覆盖率</li>
+</ul>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">gulp</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">gulp</span><span class="o">-</span><span class="vg">mocha</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">gulp</span><span class="o">-</span><span class="vg">istanbul</span>
+</pre></div>
+<p>创建gulpfilejs</p>
+<div class="highlight"><pre><span class="vg">var</span><span class="w"> </span><span class="vg">gulp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;gulp&#39;);</span>
+<span class="vg">var</span><span class="w"> </span><span class="vg">istanbul</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;gulp-istanbul&#39;);</span>
+<span class="vg">var</span><span class="w"> </span><span class="vg">mocha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;gulp-mocha&#39;); </span>
+
+<span class="vg">gulp</span><span class="o">.</span><span class="vg">task</span><span class="p">(</span><span class="c1">&#39;test&#39;, function (cb) {</span>
+<span class="w">  </span><span class="vg">gulp</span><span class="o">.</span><span class="vg">src</span><span class="p">([</span><span class="c1">&#39;db/**/*.js&#39;])</span>
+<span class="w">    </span><span class="o">.</span><span class="vg">pipe</span><span class="p">(</span><span class="vg">istanbul</span><span class="p">())</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="vg">Covering</span><span class="w"> </span><span class="vg">files</span>
+<span class="w">    </span><span class="o">.</span><span class="vg">on</span><span class="p">(</span><span class="c1">&#39;finish&#39;, function () {</span>
+<span class="w">      </span><span class="vg">gulp</span><span class="o">.</span><span class="vg">src</span><span class="p">([</span><span class="c1">&#39;test/*.js&#39;])</span>
+<span class="w">        </span><span class="o">.</span><span class="vg">pipe</span><span class="p">(</span><span class="vg">mocha</span><span class="p">())</span>
+<span class="w">        </span><span class="o">.</span><span class="vg">pipe</span><span class="p">(</span><span class="vg">istanbul</span><span class="o">.</span><span class="vg">writeReports</span><span class="p">())</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="vg">Creating</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">reports</span><span class="w"> </span><span class="vg">after</span><span class="w"> </span><span class="vg">tests</span><span class="w"> </span><span class="vg">runned</span>
+<span class="w">        </span><span class="o">.</span><span class="vg">on</span><span class="p">(</span><span class="c1">&#39;end&#39;, cb);</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">});</span>
+
+<span class="vg">gulp</span><span class="o">.</span><span class="vg">task</span><span class="p">(</span><span class="c1">&#39;default&#39;,[&#39;test&#39;], function() {</span>
+<span class="w">  </span><span class="vg">gulp</span><span class="o">.</span><span class="vg">watch</span><span class="p">([</span><span class="c1">&#39;./db/**/*&#39;,&#39;./test/**/*&#39;], [&#39;test&#39;]);</span>
+<span class="p">});</span>
+
+<span class="vg">gulp</span><span class="o">.</span><span class="vg">task</span><span class="p">(</span><span class="c1">&#39;watch&#39;,[&#39;test&#39;], function() {</span>
+<span class="w">  </span><span class="vg">gulp</span><span class="o">.</span><span class="vg">watch</span><span class="p">([</span><span class="c1">&#39;./db/**/*&#39;,&#39;./test/**/*&#39;], [&#39;test&#39;]);</span>
+<span class="p">});</span>
+</pre></div>
+<p>测试</p>
+<div class="highlight"><pre><span class="vg">node_modules</span><span class="o">/.</span><span class="vg">bin</span><span class="o">/</span><span class="vg">gulp</span><span class="w"> </span>
+</pre></div>
+<p>这时，你试试修改测试或源文件试试，看看会不会自动触发测试</p>
+
+<p>当然，如果你喜欢只是测试一次，可以这样做</p>
+<div class="highlight"><pre><span class="vg">node_modules</span><span class="o">/.</span><span class="vg">bin</span><span class="o">/</span><span class="vg">gulp</span><span class="w"> </span><span class="vg">test</span><span class="w"> </span>
+</pre></div>
+<p>如果你不熟悉gulp，可以再这里https://github.com/i5ting/js-tools-best-practice/blob/master/doc/Gulp.md学习</p>
+
+<h2>自动测试和代码测试覆盖率法2：基于cli</h2>
+
+<p>首先安装依赖npm包</p>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">mocha</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">--</span><span class="vg">save</span><span class="o">-</span><span class="vg">dev</span><span class="w"> </span><span class="vg">istanbul</span>
+</pre></div>
+<p>在package.json里scripts增加</p>
+<div class="highlight"><pre><span class="s2">&quot;test&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;./node_modules/.bin/mocha --reporter spec&quot;</span><span class="p">,</span>
+<span class="s2">&quot;test-cov&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot&quot;</span><span class="p">,</span>
+<span class="s2">&quot;test-travis&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot&quot;</span>
+</pre></div>
+<p>然后测试</p>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">test</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">run</span><span class="w"> </span><span class="vg">test</span><span class="o">-</span><span class="vg">cov</span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">run</span><span class="w"> </span><span class="vg">test</span><span class="o">-</span><span class="vg">travis</span>
+</pre></div>
+<p>这里想自动化会有点麻烦，还是建议解除gulp</p>
+
+<p>如果不了npm run命令，请参阅 https://github.com/i5ting/npm-run-test</p>
+
+<h2>测试相关网址</h2>
+
+<ul>
+<li>https://github.com/visionmedia/mocha</li>
+<li>http://visionmedia.github.io/mocha/</li>
+<li>http://mochajs.org/</li>
+<li>https://github.com/chaijs/chai</li>
+<li>http://chaijs.com/</li>
+<li>http://sinonjs.org/</li>
+<li>http://zombie.labnotes.org/</li>
+<li>https://github.com/tj/supertest（api test文档）</li>
+<li>https://github.com/tj/superagent/blob/master/test/node/agency.js（api test示例）</li>
+<li>https://github.com/i5ting/js-tools-best-practice/blob/master/doc/Gulp.md</li>
+<li>https://github.com/SBoudrias/gulp-istanbul</li>
+</ul>
+
+<h2>更多</h2>
+
+<p>下面概念，请自行了解</p>
+
+<ul>
+<li>TDD</li>
+<li>BDD</li>
+</ul>
+
+<h2>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am &#39;Add some feature&#39;</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+
+<h2>版本历史</h2>
+
+<ul>
+<li>v0.1.0 初始化版本 </li>
+</ul>
+
+<h2>作者</h2>
+
+<ul>
+<li>桑世龙</li>
+<li>柯织</li>
+<li>黄小龙</li>
+</ul>
+
+<h2>欢迎fork和反馈</h2>
+
+<p>在issue提问或邮件shiren1118@126.com</p>
+
+<h2>License</h2>
+
+<p>this gem is released under the <a href="http://www.opensource.org/licenses/MIT">MIT License</a>.</p>
+
+			          	</article>
+			        </div>
+					</div>
+	      </body>
+	    </html>
+			<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+      <script type="text/javascript" src="toc/toc_conf.js"></script>
+      
+			<SCRIPT type="text/javascript" >
+			<!--
+			$(document).ready(function(){
+          var css_conf = eval(markdown_panel_style);
+          $('#readme').css(css_conf)
+          
+          var conf = eval(jquery_ztree_toc_opts);
+  				$('#tree').ztree_toc(conf);
+
+				
+			});
+			//-->
+			</SCRIPT>
+	  
