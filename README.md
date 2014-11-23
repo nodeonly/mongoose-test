@@ -221,7 +221,7 @@ require('chai').should();
 
 	npm test
 	
-## 自动测试和代码测试覆盖率
+## 自动测试和代码测试覆盖率法1：基于gulp
 
 - auto test
 - 代码测试覆盖率
@@ -275,6 +275,29 @@ node_modules/.bin/gulp test
 ```
 
 如果你不熟悉gulp，可以再这里https://github.com/i5ting/js-tools-best-practice/blob/master/doc/Gulp.md学习
+
+## 自动测试和代码测试覆盖率法2：基于cli
+
+首先安装依赖npm包
+
+    npm install --save-dev mocha
+    npm install --save-dev istanbul
+
+在package.json里scripts增加
+
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+
+然后测试
+
+	npm test
+	npm run test-cov
+	npm run test-travis
+	
+这里想自动化会有点麻烦，还是建议解除gulp
+
+如果不了npm run命令，请参阅 https://github.com/i5ting/npm-run-test
 
 ## 测试相关网址
 
